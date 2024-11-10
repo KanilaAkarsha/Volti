@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volti - Book Now</title>
+  <link rel="stylesheet" href="BookNow.css">
+  <script defer src="BookNow.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">Volti</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="book-now.html">Book Now</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Booking Form Section -->
+  <section class="booking">
+    <div class="booking-container">
+      <h2>Book Your Charging Slot</h2>
+      <p>Reserve a charging station in just a few steps.</p>
+      <form id="bookingForm" class="booking-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Choose Location</label>
+          <select id="location" name="location" required>
+            <option value="" disabled selected>Select a location</option>
+            <option value="city-center">City Center</option>
+            <option value="uptown">Uptown</option>
+            <option value="downtown">Downtown</option>
+            <option value="suburb">Suburb</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <button type="submit" class="btn-submit">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Volti. All rights reserved.</p>
+  </footer>
+</body>
+</html>
