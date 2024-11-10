@@ -8,7 +8,7 @@
   body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: hsl(86, 54%, 51%);
     scroll-behavior: smooth;
   }
   
@@ -36,10 +36,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #00796b;
-    color: white;
     padding: 4rem;
     text-align: center;
+    background-color: hsl(86, 54%, 60%);
+    color: white;
   }
   
   .hero h2 {
@@ -61,7 +61,9 @@
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
   }
   
   .service-card h3 {
@@ -84,22 +86,11 @@
     border-radius: 50%;
   }
   
-  .service-card:hover {
-    transform: translateY(-10px);
-  }
-  
   .footer {
     padding: 2rem;
     text-align: center;
     background: #004d40;
     color: white;
-  }
-
-  /* Animation classes */
-.service-card {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
   }
   
   .service-card.active {
