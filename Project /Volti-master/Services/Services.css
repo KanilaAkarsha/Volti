@@ -9,8 +9,29 @@
   font-family: "Nunito", sans-serif;
 }
 
+.navbar{
+  background: hsl(86, 54%, 51%); font-family: calibri; padding-right: 15px;padding-left: 15px;
+}
+.navdiv{
+  display: flex; align-items: center; justify-content: space-between;
+}
+a .logo img{
+  position: fixed;
+  height: auto;
+  width: 200px;
+  left: 0px;
+  
+}
+li{
+  list-style: none; display: inline-block;
+}
+li a{
+  color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+}
+
+
 .theme-text {
-  color: hsl(86, 54%, 51%);;
+  color: hsl(86, 54%, 51%);
 }
 
 .card-img-top {
