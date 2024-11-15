@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco-Friendly EV Charging - Book Now</title>
+  <title>Eco-Friendly - Get a Quote</title>
   <style>
     /* Basic reset */
     * {
@@ -19,7 +19,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background: linear-gradient(135deg, hsl(86, 53%, 66%), hsl(86, 54%, 51%));
+      background: linear-gradient(135deg, #c3e88d, #87d37c);
       color: #333;
     }
 
@@ -27,22 +27,22 @@
     .container {
       background-color: #ffffff;
       padding: 40px;
-      max-width: 500px;
+      max-width: 600px;
       text-align: center;
       border-radius: 10px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    /* Header and subheader styling */
+    /* Header and description */
     h1 {
       font-size: 2.2em;
       color: #2d572c;
       margin-bottom: 10px;
     }
 
-    h2 {
-      font-size: 1.2em;
-      color: #4CAF50;
+    p {
+      font-size: 1.1em;
+      color: #555;
       margin-bottom: 20px;
     }
 
@@ -55,7 +55,7 @@
 
     label {
       font-weight: bold;
-      color: #555;
+      color: #333;
       text-align: left;
     }
 
@@ -64,10 +64,6 @@
       font-size: 1em;
       border: 1px solid #ddd;
       border-radius: 5px;
-    }
-
-    input[type="date"] {
-      color: #555;
     }
 
     textarea {
@@ -92,7 +88,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    /* Responsive */
+    /* Responsive design */
     @media (max-width: 600px) {
       .container {
         width: 90%;
@@ -104,29 +100,26 @@
 <body>
 
   <div class="container">
-    <h1>Eco-Friendly EV Charging</h1>
-    <h2>Book Your Charging Slot Now</h2>
-    <form action="/submit-booking" method="POST">
+    <h1>Get Your Quote</h1>
+    <p>Fill out the form below to get a personalized quote for our eco-friendly solutions.</p>
+    <form action="/submit-quote" method="POST">
       <label for="name">Full Name</label>
       <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
       <label for="email">Email Address</label>
       <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-      <label for="date">Preferred Date</label>
-      <input type="date" id="date" name="date" required>
-
-      <label for="time">Preferred Time</label>
-      <select id="time" name="time" required>
-        <option value="morning">Morning (8am - 12pm)</option>
-        <option value="afternoon">Afternoon (12pm - 4pm)</option>
-        <option value="evening">Evening (4pm - 8pm)</option>
+      <label for="service">Select a Service</label>
+      <select id="service" name="service" required>
+        <option value="ev-charging">EV Charging Solutions</option>
+        <option value="solar-panels">Solar Panel Installation</option>
+        <option value="energy-audit">Energy Efficiency Audit</option>
       </select>
 
-      <label for="message">Additional Notes</label>
-      <textarea id="message" name="message" rows="4" placeholder="Any additional information..."></textarea>
+      <label for="details">Additional Details</label>
+      <textarea id="details" name="details" rows="4" placeholder="Provide any specific requirements or details..."></textarea>
 
-      <button type="submit" class="btn-submit">Book Now</button>
+      <button type="submit" class="btn-submit">Get a Quote</button>
     </form>
   </div>
 
